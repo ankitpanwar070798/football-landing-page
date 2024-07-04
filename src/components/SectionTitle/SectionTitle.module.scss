@@ -1,0 +1,22 @@
+.section_title_container{
+    gap: 16px;
+    width: fit-content;
+    margin: 0 auto;
+    .title{
+        // color: #2C2C2C;
+        text-align: center;
+        font-size: 48px;
+        font-family: var(--font-syne);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    @media (max-width: 1023px){
+        gap: 12px;
+        .title{
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+}

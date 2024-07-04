@@ -1,0 +1,102 @@
+.contactUs_container {
+  max-width: 1280px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  position: relative;
+  border-radius: 40px;
+  background: #012b7f;
+  @media (max-width: 1023px) {
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  .details_container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0;
+    padding: 40px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      padding: 40px 16px 16px 16px;
+    }
+  }
+  .contact_info h1 {
+    color: #fff;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: var(--font-syne);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    text-align: center;
+    @media(max-width: 1024px){
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+  }
+  .image_section {
+    border-radius: 40px;
+    width: 100%;
+  }
+
+  .input_container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    @media(max-width: 1024px) {
+     display: block;
+    }
+  }
+  :global :where(.css-dev-only-do-not-override-m4timi).ant-form-vertical .ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-label{
+    padding: 0 0 21px !important;
+    @media(max-width: 1024px) {
+        padding: 0 0 12px !important;
+        }                               
+  }
+  :global .ant-form-item .ant-form-item-label > label {
+    color: #fff !important;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: var(--font-syne);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media(max-width: 1024px) {
+      font-size: 14px;
+      }
+  }
+  :global .ant-input {
+    border-radius: 16px;
+    background: #093388;
+    padding: 16px 50px 20px 16px;
+    border: none !important;
+  }
+  .form_input {
+    color: #3459a2;
+    font-family: var(--font-syne);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .submit_cta{
+    text-align: center;
+  }
+  .submit_btn{
+    border-radius: 100px;
+  background: #FBE046;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 32px;
+  color: #2C2C2C;
+  text-align: center;
+  font-family: var(--font-syne);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 16px;
+  }
+}

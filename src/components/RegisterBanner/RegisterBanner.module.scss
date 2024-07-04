@@ -1,0 +1,108 @@
+.banner_container {
+  width: 100%;
+  height: 480px;
+  padding: 0 80px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 60px;
+  .banner_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .banner_logo{
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
+    z-index: 1;
+    width: fit-content;
+
+}
+  .banner_content {
+    max-width: 540px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    .title {
+      color: #fff;
+      font-size: 50.79px;
+      font-family: var(--font-syne);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+    .description {
+      color: #fff;
+      font-size: 18px;
+      font-family: var(--font-syne);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 40px;
+      max-width: 411px;
+      margin-bottom: 40px;
+    }
+    .regiter_btn {
+      padding: 16px 32px;
+      border-radius: 1000px;
+      background: #fbe046;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(5px);
+      color: #000;
+      font-size: 16px;
+      font-family: var(--font-syne);
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      &:hover {
+        background: #fbe046 !important;
+        color: #fff !important;
+      }
+    }
+ 
+  }
+ 
+  @media (max-width: 1023px) {
+    padding: 0;
+    height: auto;
+    background: #012B7F;
+    margin-bottom: 50px;
+    .md_banner_background{
+      position: relative;
+    }
+.background_img{
+  width: 100% !important;
+  height: 100% !important;
+}
+.banner_logo{
+  position: absolute;
+  right: 3%;
+  bottom: 4%;
+}
+
+    .banner_content {
+      max-width: 100%;
+      position: relative;
+      padding: 3px 24px 50px;
+   
+      .title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 100%;
+      }
+      .banner_cta{
+        text-align: center;
+      }
+    }
+  }
+}

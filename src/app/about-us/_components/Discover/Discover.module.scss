@@ -1,0 +1,117 @@
+.discover_container {
+  max-width: 1280px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding: 0 20px;
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    margin: 0 auto 60px;
+  }
+  .details_container {
+    @media (max-width: 1023px) {
+      order: 2;
+      .banner_cta{
+        text-align: center;
+      }
+    }
+
+  }
+
+  .images_container {
+    @media (max-width: 1023px) {
+      order: 1;
+    }
+  }
+  .details_container {
+    text-align: start;
+  }
+  .tag_container {
+    color: #003cae;
+    font-family: var(--font-syne);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20.985px;
+    @media (max-width: 1023px) {
+      text-align: center;
+      font-size: 12px;
+      line-height: 20.985px;
+    }
+  }
+  .title_container {
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+  }
+  .title_container h1 {
+    color: #2c2c2c;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-syne);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+    text-align: start;
+    max-width: 453px;
+    width: 100%;
+    @media (max-width: 1023px) {
+      font-size: 24px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  .description_container p {
+    color: #626262;
+    text-align: justify;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-syne);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.988px;
+    @media (max-width: 1023px) {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+  .description_container {
+    margin: 16px 0;
+    @media (max-width: 1023px) {
+      margin: 0 0 32px;
+    }
+  }
+  .enroll_btn {
+    border-radius: 1000px;
+    background: #fbe046;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 16px 32px;
+    color: #2c2c2c;
+    text-align: center;
+    font-family: var(--font-syne);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .image {
+    max-width: 608px;
+    width: 100%;
+    max-height: 489.422px;
+    height: 100%;
+    @media (max-width: 1023px) {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

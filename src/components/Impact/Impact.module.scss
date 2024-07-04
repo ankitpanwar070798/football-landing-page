@@ -1,0 +1,82 @@
+.impact_container{
+    background: #012B7F;
+    padding: 64px 80px 80px 80px;
+    .title{
+        color: #FFF;
+        text-align: center;
+        font-family: var(--font-syne);
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+    .impact_detail_section{
+        display: flex;
+        gap: 3rem;
+        .impact_item_container{
+            text-align: center;
+            .impact_value{
+                color: #FBE046;
+                font-family: var(--font-urbanist);
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 24px;
+            }
+            .impact_title{
+                color: #FFF;
+                font-family: var(--font-syne);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.32px;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            .impact_description{
+                color: #FFF;
+                font-family: var(--font-syne);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &:not(:last-child){
+                border-right: 1px solid #90ABE1;
+            }
+        }
+    }
+
+    @media (max-width: 1023px){
+      padding: 60px 24px;
+        .title{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .impact_detail_section{
+           flex-direction: column;
+           gap: 0;
+            .impact_item_container{
+                text-align: center;
+                padding: 40px 0;
+                .impact_value{
+                    font-size: 60px;
+                }
+                .impact_title{
+                    font-size: 18px;
+                }
+                .impact_description{
+                    font-size: 19px;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid #90ABE1;
+                    border-right: none;
+                }
+            }
+        }
+      
+    }
+}

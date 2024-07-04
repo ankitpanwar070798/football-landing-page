@@ -1,0 +1,183 @@
+.tournament_participation_container{
+    padding: 80px 0 100px 0;
+    background-color: #fff;
+    .content_section{
+        margin-top: 36px;
+        position: relative;
+        .exclusive_coaching_slider{
+            :global .swiper-wrapper{
+                // padding: 4rem 0;
+                .swiper-slide{
+                    width: 20%;  
+                    &:last-child{
+                        width: 15%;
+                    }               
+                }
+            }
+        }
+
+        .view_all_slider{
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            height: 360px;
+            .title{
+                color: #012B7F;
+                font-family: var(--font-syne);
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .arrow_icon{
+                width: 68px;
+                height: 68px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 69.329px;
+                background: #F5DC4D;
+                cursor: pointer;
+            }
+        }
+
+        :global .swiper-custom-pagination{
+            text-align: center;
+            margin-top: 32px;
+            display: none;
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 6px;
+                border-radius: 10px;
+                background: rgba(239, 237, 224, 0.60);
+                opacity: 1;
+                &.swiper-pagination-bullet-active{
+                    width: 32px;
+                    background: #FBE046;
+                }
+            }
+        }
+
+        :global .swiper-button-prev{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 81.564px;
+            background: #FBE046;
+            display: none;
+            left:0;
+
+            &::after{
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url(../../../public/images/slider-left-arrow.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        :global .swiper-button-next{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 81.564px;
+            background: #FBE046;
+            display: none;
+            right: 0;
+            &::after{
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url(../../../public/images/slider-right-arrow.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }          
+    }
+    .btn_section{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    @media (max-width: 1023px){
+        padding: 60px 24px;
+        .content_section{
+            margin-top: 32px;
+            .exclusive_coaching_slider{
+                :global .swiper-wrapper{
+                    .swiper-slide{
+                        width: 100%;  
+                        &:last-child{
+                            width: 100%;
+                            display: none;
+                        }               
+                    }
+                }
+            }
+            :global .swiper-custom-pagination{
+                display: block;
+            }
+            :global .swiper-button-prev,:global .swiper-button-next{
+                display: flex;
+            }
+        }
+    }
+}
+
+.participation_card_container{
+    &.even_card{
+        margin-top: 4rem;
+    }
+    .image_section{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+    :global img{
+        border-radius: 12px;
+    }
+    .participation_detail_container{
+        .title{
+            color: #2C2C2C;
+            font-family: var(--font-syne);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-bottom: 4px;
+        }
+        .description{
+            color: #003CAE;
+            font-family: var(--font-syne);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    @media (max-width: 1023px){
+        width: 90%;
+        margin: 0 auto;
+        &.even_card{
+            margin-top: 0;
+        }
+        .image_section{
+            margin-bottom: 0;
+        }
+        .participation_detail_container{
+            display: none;
+        }
+    }
+}

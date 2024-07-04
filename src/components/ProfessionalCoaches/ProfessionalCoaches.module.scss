@@ -1,0 +1,257 @@
+.professional_coaches_container{
+    padding: 60px 10px 80px 10px;
+    background: #012B7F;
+
+    .content_section{
+        margin-top: 50px;
+
+        .professional_slider{
+            :global .swiper-wrapper{
+            }
+            :global .swiper-button-prev{
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 81.564px;
+                background: #FFF;
+                &::after{
+                    content: '';
+                    width: 60px;
+                    height: 60px;
+                    background: url(../../../public/images/slider-left-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+            }
+            :global .swiper-button-next{
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 81.564px;
+                background: #FFF;
+                &::after{
+                    content: '';
+                    width: 60px;
+                    height: 60px;
+                    background: url(../../../public/images/slider-right-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+            }           
+        }
+
+        :global .swiper-custom-pagination{
+            text-align: center;
+            margin-top: 32px;
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 6px;
+                border-radius: 10px;
+                background: rgba(239, 237, 224, 0.60);
+                opacity: 1;
+                &.swiper-pagination-bullet-active{
+                    width: 32px;
+                    background: #FBE046;
+                }
+            }
+        }
+
+        .profession_detail_section{
+            .description{
+                color: #FFF;
+                font-family: var(--font-syne);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 140% */
+            }
+            .horizontal_divider{
+                width: 100%;
+                height: 1px;
+                margin: 28px 0;
+                background: rgba(255, 255, 255, 0.30);
+            }
+            .specialization_section{
+                .title{
+                    color: #FFF;
+                    font-family: var(--font-syne);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 16px;
+                }
+                .specialization_list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 20px;
+                    padding-left: 2rem;
+                    :global li{
+                        color: #FFF;
+                        font-family: var(--font-syne);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px; /* 140% */
+                        width: 33%;
+                    }
+                }                
+            }
+            .trained_count{
+                color: #FFF;
+                font-family: var(--font-syne);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 10px;
+                :global span{
+                    color: #FBE046;
+                    font-family: var(--font-poppins);
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+            .btn_section{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 50px;
+            }
+        }
+    }
+    @media (max-width: 1023px){
+        padding: 50px 24px 60px 24px;
+        .content_section{
+            margin-top: 32px;
+            .professional_slider{
+                :global .swiper-button-prev{
+                    width: 60px;
+                    height: 60px;
+                    background: #FBE046;
+                    &::after{
+                        content: '';
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                :global .swiper-button-next{
+                    width: 60px;
+                    height: 60px;
+                    background: #FBE046;
+                    &::after{
+                        content: '';
+                        width: 40px;
+                        height: 40px;
+                    }
+                }           
+            }
+            :global .swiper-custom-pagination{
+                margin-top: 22px;
+            }
+            .profession_detail_section{
+                .description{
+                    font-size: 18px;
+                    line-height: 24px; /* 133.333% */
+                }
+                .horizontal_divider{
+                    margin: 20px 0;
+                }
+                .specialization_section{
+                    .title{
+                        margin-bottom: 20px;
+                    }
+                    .specialization_list{
+                        row-gap: 12px;
+                        padding-left: 1rem;
+                        flex-direction: column;
+                        :global li{
+                            font-size: 18px;
+                            width: 100%;
+                        }
+                    }                
+                }
+                .btn_section{
+                    justify-content: center;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+.professional_card_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .image_section{
+        width: 280px;
+        height: 340px;
+        border-radius: 16px;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    .professional_name{
+        color: #FFF;
+        text-align: center;
+        font-family: var(--font-syne);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 3px;
+    }
+    .professional_role{
+        color: #FBE046;
+        text-align: center;
+        font-family: var(--font-syne);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    @media (max-width: 1023px){
+        margin: 0 auto;
+        width: 80%;
+        .image_section{
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            margin-bottom: 0;
+            :global img{
+                border-radius: 8px; 
+            }
+            .professional_detail{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top:0;
+                padding: 0 20px 20px 20px;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 42%, rgba(0, 0, 0, 0.60) 80.66%);
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+            }
+        } 
+        .professional_name{
+            font-size: 22px;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+        .professional_role{
+            font-size: 18px;
+            text-align: left;
+        }
+    
+    }
+}

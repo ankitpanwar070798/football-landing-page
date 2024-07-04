@@ -1,0 +1,159 @@
+.our_trustee_container {
+  max-width: 1280px;
+  margin: 0 auto 145px;
+  padding: 0 20px;
+  position: relative;
+  @media (max-width: 1023px) {
+    margin: 0 auto 60px;
+  }
+  .title_container {
+    text-align: center;
+    @media (max-width: 1023px) {
+    }
+  }
+  .title_container h1 {
+    color: #000;
+    text-align: center;
+    font-family: var(--font-syne);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media (max-width: 1023px) {
+        font-size: 24px;
+    }
+  }
+  .grid_container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 0;
+    @media (max-width: 1023px) {
+        margin: 32px 0;
+        gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+        gap: 40px;
+        margin: 32px 0;
+      grid-template-columns: 1fr;
+    }
+  }
+  .card {
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    position: relative;
+    .card_image {
+      width: 100%;
+      height: auto;
+    }
+    .card_content {
+      text-align: start;
+      margin-top: 20px;
+    }
+    .card_title {
+      color: #2c2c2c;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: var(--font-syne);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      @media (max-width: 1023px) {
+        font-size: 22px;
+        color: #fff;
+        position: absolute;
+        bottom: 32%;
+        left: 6%;
+      }
+    }
+    .card_role {
+      color: #003cae;
+      font-family: var(--font-syne);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      @media (max-width: 1023px) {
+        font-size: 18px;
+        font-weight: 400;
+        color: #fbe046;
+        position: absolute;
+        bottom: 27%;
+        left: 6%;
+      }
+    }
+    .card_description {
+      color: #626262;
+      text-align: justify;
+      font-variant-numeric: lining-nums proportional-nums ordinal;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: var(--font-syne);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 12px;
+      @media(max-width:1023){
+        font-size: 16px;
+      }
+    }
+  }
+  .view_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+  }
+  h4 {
+    color: #012b7f;
+    text-align: center;
+    font-family: var(--font-syne);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+  .view_more_md{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 211px 87px 20px 88px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+backdrop-filter: blur(3px);
+  }
+  .view_more_md p{
+    border-radius: 1000px;
+background: #FBE046;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 16px 32px;
+width: fit-content;
+margin: auto;
+cursor: pointer;
+color: #2D2D2D;
+text-align: center;
+font-family: var(--font-syne);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+  }
+  .hide_on_mobile {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

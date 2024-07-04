@@ -1,0 +1,47 @@
+.our_partner_and_schools_container{
+    padding: 100px 100px 100px 0;
+    .content_section{
+        margin-top: 60px;
+
+        .title{
+            color: #2C2C2C;
+            font-family: var(--font-syne);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 16px;
+        }
+        .sub_title{
+            color: #626262;
+            text-align: justify;
+            font-family: var(--font-syne);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23.988px; /* 149.922% */
+            margin-bottom: 40px;
+        }
+    }
+    @media (max-width: 1023px){
+        padding: 60px 0;
+        .content_section{
+            margin-top: 32px;
+            .title{
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .sub_title{
+                margin-bottom: 32px;
+            }
+            .detail_section{
+                margin-top: 28px;
+                padding: 0 24px;
+                .enroll_btn{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

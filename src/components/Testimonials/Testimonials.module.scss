@@ -1,0 +1,167 @@
+.testimonial_container{
+    padding: 100px 0;
+    .content_section{
+        margin-top: 24px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        :global .swiper{
+            .swier-wrapper{
+                .swiper-slide{
+                   
+                }
+            }
+        }
+        :global .swiper-custom-pagination{
+            text-align: center;
+            margin-top: 32px;
+            .swiper-pagination-bullet{
+                width: 6px;
+                height: 6px;
+                border-radius: 10px;
+                background: #012B7F;
+                opacity: 1;
+                &.swiper-pagination-bullet-active{
+                    width: 60px;
+                }
+            }
+        }
+
+
+        :global .swiper-button-prev{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 81.564px;
+            background:  #012B7F;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &::after{
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url(../../../public/images/left-arrow-white.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+        :global .swiper-button-next{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 81.564px;
+            background: #012B7F;
+            top: 50%;
+            transform: translateY(-50%);
+            &::after{
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: url(../../../public/images/right-arrow-white.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+
+    @media (max-width: 1023px){
+      padding: 60px 24px;
+      .content_section{
+        width: 100%;
+
+        :global .swiper-custom-pagination{
+            margin-top: 50px;
+            .swiper-pagination-bullet{
+                width: 12px;
+                background: #FBE046;
+                &.swiper-pagination-bullet-active{
+                    width: 32px;
+                }
+            }
+        }
+
+        :global .swiper-button-prev{
+            background:  #FBE046;
+            top: auto;
+            transform: none;
+            bottom: 0;
+
+            &::after{
+                background: url(../../../public/images/slider-left-arrow.svg);
+            }
+        }
+        :global .swiper-button-next{
+            background:  #FBE046;
+            top: auto;
+            transform: none;
+            bottom: 0;
+
+            &::after{
+                background: url(../../../public/images/slider-right-arrow.svg);
+            }
+        }
+      }
+    }
+}
+
+
+.testimonial_item_container{
+    border-radius: 24px;
+    // background-color: #012B7F;
+    background: url(../../../public/images/double-quote.png),#012B7F;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 33px;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    .description{
+        color: #FFF;
+        text-align: justify;
+        font-family: var(--font-syne);
+        font-size: 16.073px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 100px;
+    }
+    .author_name{
+        color: #FFF;
+        font-family: var(--font-syne);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 8px;
+    }
+    .author_role{
+        color: #FFF;
+        font-family: var(--font-syne);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .triangle_vector{
+       
+    }
+    @media (max-width: 1023px){
+        padding: 37px 20px 26px 20px;
+        width: 100%;
+        .author_name{
+            font-size: 18px;
+        }
+        .author_role{
+            font-size: 14px;
+        }
+    }
+}

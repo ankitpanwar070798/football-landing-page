@@ -1,0 +1,50 @@
+.custom_swiper_container{
+    position: relative;
+    :global .swiper {
+        .swiper-wrapper{
+            padding-bottom: 4rem;
+        }
+        .swiper-pagination{
+            .swiper-pagination-bullet{
+                width: 12px;
+                height: 6px;
+                border-radius: 10px;
+                background: rgba(219, 219, 219, 0.60);
+                &.swiper-pagination-bullet-active{
+                    width: 32px;
+                    background: #FBE046;
+                }
+            }
+        }
+    }
+
+    .prev_arrow{
+        position: absolute;
+        left: 0;
+        top: calc(50% - 4rem);
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background: #FBE046;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .next_arrow{
+        position: absolute;
+        right: 0;
+        top: calc(50% - 4rem);
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background: #FBE046;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

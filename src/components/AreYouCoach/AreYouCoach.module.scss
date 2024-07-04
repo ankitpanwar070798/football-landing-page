@@ -1,0 +1,45 @@
+.are_you_coach_container{
+    background: rgba(255, 246, 195, 0.80);
+    padding: 100px 80px;
+    .image_container{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        border-radius: 12.973px;
+        overflow: hidden;
+    }
+    .title{
+        color: #012B7F;
+        font-family: var(--font-syne);
+        font-size: 40.791px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+    .sub_title{
+        color: #012B7F;
+        font-family: var(--font-syne);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+    @media(max-width: 1023px) {
+        padding: 40px 24px 60px 24px;
+        .title{
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .sub_title{
+            font-size: 18px;
+        }
+        .enroll_btn{
+            display: flex;
+            justify-content: center;
+        }
+    
+    }
+}

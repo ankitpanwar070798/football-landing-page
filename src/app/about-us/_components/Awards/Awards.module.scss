@@ -1,0 +1,106 @@
+.awards_container {
+  background: #012b7f;
+  background-image: url("/images/crossBg.svg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 100px;
+  @media (max-width: 1023px) {
+    padding: 50px 24px 76.667px 24px;
+    background-image: none;
+  }
+
+  .heading_container {
+    max-width: 1052.514px;
+    margin: auto;
+    padding: 40px 0;
+    @media (max-width: 1023px) {
+      padding: 0;
+    }
+  }
+  .title h1 {
+    color: #fff;
+    font-family: var(--font-syne);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    @media (max-width: 1023px) {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+  }
+  .heading h2 {
+    color: #fff;
+    text-align: center;
+    font-family: var(--font-syne);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media (max-width: 1023px) {
+      font-size: 40px;
+    }
+  }
+  .awards_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+    padding-bottom: 60px;
+    @media (max-width: 1023px) {
+      gap: 0;
+      padding-bottom: 0;
+    }
+  }
+  .award {
+    max-width: 360px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: 1023px) {
+      gap: 16px;
+    }
+  }
+  .title h3 {
+    color: #fff;
+    font-family: var(--font-syne);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+    @media (max-width: 1023px) {
+      text-align: center;
+      font-size: 19px;
+      line-height: 26px;
+    }
+  }
+  .description p {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: justify;
+    font-family: var(--font-syne);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media (max-width: 1023px) {
+      font-size: 16px;
+    }
+  }
+  hr {
+    display: none;
+    @media (max-width: 1023px) {
+      display: block;
+      width: 80%;
+      height: 0.5px;
+      background: #90abe1;
+      margin: 40px auto;
+    }
+  }
+}
